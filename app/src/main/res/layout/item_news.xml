@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/article_img"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:scaleType="fitXY"
+            android:background="@drawable/placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <TextView
+            android:lines="2"
+            android:ellipsize="end"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:layout_margin="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/greyColor"
+            app:layout_constraintTop_toBottomOf="@id/article_img"
+            android:id="@+id/title_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="placeholder text" />
+
+        <TextView
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/hintColor"
+            app:layout_constraintTop_toBottomOf="@id/title_txt"
+            android:id="@+id/author_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="placeholder text" />
+
+        <TextView
+            android:layout_marginBottom="15dp"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/hintColor"
+            app:layout_constraintTop_toBottomOf="@id/author_txt"
+            android:id="@+id/published_at_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="placeholder text" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
